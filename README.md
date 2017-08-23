@@ -8,7 +8,7 @@
 ## Installation
 
 ```sh
-npm install tslint-config-airbnb --save
+npm install tslint-config-aot --save
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ In `tslint.json`:
 
 ```json
 {
-  "extends": "tslint-config-airbnb"
+  "extends": "tslint-config-aot"
 }
 ```
 
