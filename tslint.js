@@ -6,8 +6,9 @@ module.exports = {
     path.join(path.dirname(require.resolve('tslint-eslint-rules')), 'dist/rules'),
     path.join(path.dirname(require.resolve('tslint-microsoft-contrib')), './'),
     path.join(path.dirname(require.resolve('vrsource-tslint-rules')), 'rules'),
-    path.join(path.dirname(require.resolve('tslint-eslint-react')), 'rules')
+    path.join(path.dirname(require.resolve('tslint-react')), 'rules')
   ],
+  extends: 'tslint-config-prettier',
   rules: {
     'prefer-const': true, // 2.1, 13.1
     'no-var-keyword': true, // 2.2
@@ -135,7 +136,7 @@ module.exports = {
     'jsx-key': true,
     'jsx-no-bind': true,
     'jsx-no-lambda': true,
-    'jsx-no-multiline-js': true,
+    'jsx-no-multiline-js': false,
     'jsx-no-string-ref': true,
     'jsx-self-close': true,
     'jsx-wrap-multiline': true
