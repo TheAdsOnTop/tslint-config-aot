@@ -141,6 +141,8 @@ module.exports = {
     'jsx-wrap-multiline': false,
     'typedef': [
       true,
+      'call-signature',
+      'arrow-call-signature',
       'parameter',
       'arrow-parameter',
       'property-declaration',
