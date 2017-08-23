@@ -1,12 +1,13 @@
 {
   "name": "tslint-config-aot",
   "description": "A TSLint config for AOT based on Airbnb JavaScript Style",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Rishabh Jain <rishabh@theadsontop.com>",
   "dependencies": {
     "tslint-consistent-codestyle": "^1.4.0",
     "tslint-eslint-rules": "^4.1.1",
     "tslint-microsoft-contrib": "^5.0.0",
+    "tslint-react": "^3.2.0",
     "vrsource-tslint-rules": "^5.1.0"
   },
   "keywords": [

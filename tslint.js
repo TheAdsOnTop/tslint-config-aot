@@ -5,7 +5,8 @@ module.exports = {
     path.join(path.dirname(require.resolve('tslint-consistent-codestyle')), './'),
     path.join(path.dirname(require.resolve('tslint-eslint-rules')), 'dist/rules'),
     path.join(path.dirname(require.resolve('tslint-microsoft-contrib')), './'),
-    path.join(path.dirname(require.resolve('vrsource-tslint-rules')), 'rules')
+    path.join(path.dirname(require.resolve('vrsource-tslint-rules')), 'rules'),
+    path.join(path.dirname(require.resolve('tslint-eslint-react')), 'rules')
   ],
   rules: {
     'prefer-const': true, // 2.1, 13.1
@@ -75,7 +76,7 @@ module.exports = {
     ],
     'ter-indent': [
       true,
-      2,
+      4,
       { 'SwitchCase': 1 }
     ], // 18.1
     whitespace: [
@@ -126,6 +127,17 @@ module.exports = {
       'check-format' // 22.2
     ],
     'no-var-self': true, // 22.5
-    'import-name': true // 22.6
+    'import-name': true, // 22.6
+    'jsx-alignment': true,
+    'jsx-boolean-value': 'never',
+    'jsx-curly-spacing': 'never',
+    'jsx-equal-spacing': 'always',
+    'jsx-key': true,
+    'jsx-no-bind': true,
+    'jsx-no-lambda': true,
+    'jsx-no-multiline-js': true,
+    'jsx-no-string-ref': true,
+    'jsx-self-close': true,
+    'jsx-wrap-multiline': true
   }
 };
