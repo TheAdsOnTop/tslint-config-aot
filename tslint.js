@@ -58,8 +58,6 @@ module.exports = {
       true,
       "allow-null-check"
     ], // 15.1
-    // 'no-boolean-literal-compare': true, // 15.3  disabled by https://github.com/Microsoft/vscode-tslint/issues/70
-    // 'strict-boolean-expressions': true, // 15.3  disabled by https://github.com/Microsoft/vscode-tslint/issues/70
     'brace-style': [
       true,
       '1tbs',
@@ -140,6 +138,41 @@ module.exports = {
     'jsx-no-multiline-js': false,
     'jsx-no-string-ref': true,
     'jsx-self-close': true,
-    'jsx-wrap-multiline': false
+    'jsx-wrap-multiline': false,
+    'typedef': [
+      true,
+      'parameter',
+      'arrow-parameter',
+      'property-declaration',
+      'variable-declaration',
+      'member-variable-declaration',
+      'object-destructuring',
+      'array-destructuring'
+    ],
+    'typedef-whitespace': [
+      true,
+      {
+        'call-signature': 'nospace',
+        'index-signature': 'nospace',
+        'parameter': 'nospace',
+        'property-declaration': 'nospace',
+        'variable-declaration': 'nospace'
+      },
+      {
+        'call-signature': 'onespace',
+        'index-signature': 'onespace',
+        'parameter': 'onespace',
+        'property-declaration': 'onespace',
+        'variable-declaration': 'onespace'
+      },
+      'unified-signatures': true,
+      'no-duplicate-variable': [
+        true,
+        'check-parameters'
+      ]
+    ],
+    'prefer-object-spread': true,
+    'newline-before-return': true,
+    'no-boolean-literal-compare': true
   }
 };
