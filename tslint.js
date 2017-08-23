@@ -113,7 +113,8 @@ module.exports = {
     ], // 19.2
     semicolon: [
       true,
-      'always'
+      'always',
+      'ignore-bound-class-methods'
     ], // 20.1
     radix: true, // 21.3
     'no-construct': true, // 21.3, 21.6
@@ -132,13 +133,13 @@ module.exports = {
     'jsx-alignment': true,
     'jsx-boolean-value': 'never',
     'jsx-curly-spacing': 'never',
-    'jsx-equal-spacing': 'always',
+    'jsx-equals-spacing': 'always',
     'jsx-key': true,
     'jsx-no-bind': true,
     'jsx-no-lambda': true,
     'jsx-no-multiline-js': false,
     'jsx-no-string-ref': true,
     'jsx-self-close': true,
-    'jsx-wrap-multiline': true
+    'jsx-wrap-multiline': false
   }
 };
