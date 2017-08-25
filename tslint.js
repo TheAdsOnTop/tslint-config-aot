@@ -123,12 +123,11 @@ module.exports = {
       } // 22.1
     ],
     'variable-name': [
-      true,
-      'check-format' // 22.2
+      false,
     ],
     'no-var-self': true, // 22.5
     'import-name': true, // 22.6
-    'jsx-alignment': true,
+    'jsx-alignment': false,
     'jsx-boolean-value': 'never',
     'jsx-curly-spacing': 'never',
     'jsx-equals-spacing': 'always',
